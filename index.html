@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>Security Alert</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Free Fitian El Mazbah Gifts</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container shake">
-    <h1>⚠️ YOUR PHONE HAS BEEN HACKED ⚠️</h1>
-    <p id="warning">Accessing personal data...</p>
-    <div id="timer">10</div>
 
-    <div id="safe" class="hidden">
-      <h2>Relax 😌</h2>
-      <p>This is NOT real hacking.</p>
-      <p>This demo shows how hackers scare people.</p>
-    </div>
+  <!-- Cookie Banner -->
+  <div class="cookies">
+    This website uses cookies to track device activity.
+    <button onclick="hideCookies()">Accept</button>
+  </div>
+
+  <!-- Fake Permission Popup -->
+  <div class="permission-popup">
+    <h2>⚠️ Permissions Required</h2>
+    <p>To continue, allow access to:</p>
+    <ul>
+      <li>📋 Clipboard</li>
+      <li>📍 Location</li>
+      <li>📷 Camera</li>
+    </ul>
+    <button onclick="acceptPermissions()">Allow</button>
+  </div>
+
+  <!-- Cute Trap Page -->
+  <div id="cute" class="hidden">
+    <h1>🎁 Free Fitian El Mazbah Gifts 🎁</h1>
+    <h2>❤️ بابا يسوع بيحبك ❤️</h2>
+    <p>اكتب بياناتك لتأكيد الهدية</p>
+
+    <input type="text" placeholder="Phone number" />
+    <input type="email" placeholder="Email address" />
+
+    <button onclick="triggerHack()">شوف هديتك 🎁</button>
   </div>
 
   <script src="script.js"></script>
