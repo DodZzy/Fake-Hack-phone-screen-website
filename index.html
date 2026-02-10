@@ -2,39 +2,53 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Free Fitian El Mazbah Gifts</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <!-- Cookie Banner -->
+<body class="cute-theme">
+
+  <!-- Cookies -->
   <div class="cookies">
-    This website uses cookies to track device activity.
-    <button onclick="hideCookies()">Accept</button>
+    This website uses cookies to improve your experience 🍪
+    <button onclick="hideCookies()">موافق</button>
   </div>
 
-  <!-- Fake Permission Popup -->
-  <div class="permission-popup">
-    <h2>⚠️ Permissions Required</h2>
-    <p>To continue, allow access to:</p>
-    <ul>
-      <li>📋 Clipboard</li>
-      <li>📍 Location</li>
-      <li>📷 Camera</li>
-    </ul>
-    <button onclick="acceptPermissions()">Allow</button>
-  </div>
+  <div class="wrapper">
+    <!-- Cute Permission Page -->
+    <div class="card" id="permissions">
+      <h1>🎁 Free Fitian El Mazbah Gifts 🎁</h1>
+      <h2>💖 أسرة فتيان المذبح بتضحي 💖</h2>
+      <p class="jesus">بابا يسوع بيحبك 🤍</p>
 
-  <!-- Cute Trap Page -->
-  <div id="cute" class="hidden">
-    <h1>🎁 Free Fitian El Mazbah Gifts 🎁</h1>
-    <h2>❤️ بابا يسوع بيحبك ❤️</h2>
-    <p>اكتب بياناتك لتأكيد الهدية</p>
+      <p class="soft-text">
+        علشان نجهز هديتك محتاجين شوية سماحيات بسيطة 🌸
+      </p>
 
-    <input type="text" placeholder="Phone number" />
-    <input type="email" placeholder="Email address" />
+      <div class="permissions-list">
+        <div>📋 Clipboard Access</div>
+        <div>📍 Location</div>
+        <div>📷 Camera</div>
+      </div>
 
-    <button onclick="triggerHack()">شوف هديتك 🎁</button>
+      <button class="cute-btn" onclick="acceptPermissions()">
+        كمّل ❤️
+      </button>
+    </div>
+
+    <!-- Cute Data Page -->
+    <div class="card hidden" id="data">
+      <h2>🎀 خطوة أخيرة 🎀</h2>
+      <p>اكتب بياناتك لتأكيد الهدية</p>
+
+      <input type="text" placeholder="📞 رقم التليفون" />
+      <input type="email" placeholder="📧 الإيميل" />
+
+      <button class="cute-btn" onclick="triggerHack()">
+        شوف هديتك 🎁
+      </button>
+    </div>
   </div>
 
   <script src="script.js"></script>
